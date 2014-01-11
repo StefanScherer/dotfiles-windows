@@ -11,5 +11,4 @@ if "%answer%"=="Y" goto doIt
 goto :EOF
 
 :doIt
-echo xcopy ...
 xcopy . "%USERPROFILE%" /EXCLUDE:excludes.txt /s /i /y
