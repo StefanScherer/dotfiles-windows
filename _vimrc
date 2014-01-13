@@ -1,13 +1,4 @@
-" An example for a vimrc file.
-"
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last change:	2008 Jul 02
-"
-" To use it, copy it to
-"     for Unix and OS/2:  ~/.vimrc
-"	      for Amiga:  s:.vimrc
-"  for MS-DOS and Win32:  $VIM\_vimrc
-"	    for OpenVMS:  sys$login:.vimrc
+" Windows _vimrc file
 
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
@@ -17,6 +8,18 @@ endif
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
+set hlsearch
+set fileformat=unix
+set expandtab
+set shiftwidth=4
+set tabstop=4
+set mousemodel=popup
+
+" Xterm-like selection
+set guioptions=am
+
+an 1.9  PopUp.&Perl::Tidy\ Gesamte\ Datei	mz :%!perltidy -q -bli -ci=4 -l=160 -pt=2 -bt=2 -sbt=2<CR> :'z<CR>
+vnoremenu 1.16 PopUp.&Perl::Tidy\ Selektion	mz :!perltidy -q -bli -ci=4 -l=160 -pt=2 -bt=2 -sbt=2<CR> :'z<CR>
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
