@@ -6,12 +6,13 @@ Inspired by <https://github.com/paulirish/dotfiles> for MacOS.
 ## Features
 ### Syntax highlighting
 
-* highlight inline shell scripts in Vagrant files
+* highlight inline shell scripts in Vagrantfiles
 
 ### Tools
 
-* addtime, show relative time stamp in stdout of another tool.
+* **addtime**: show relative time stamp in stdout of another tool.
   Usage: anothertool | addtime
+* **z**: change to one of your favorite project folder
 
 ### Vagrant
 
