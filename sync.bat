@@ -1,4 +1,4 @@
-rem @echo off
+@echo off
 cd /D %~dp0
 git pull
 
