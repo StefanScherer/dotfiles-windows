@@ -10,12 +10,12 @@ Inspired by <https://github.com/paulirish/dotfiles> for MacOS.
 
 ### Tools
 
-* addtime, show relative time stamp in stdout of another tool
-  Usage: anothertools | addtime
+* addtime, show relative time stamp in stdout of another tool.
+  Usage: anothertool | addtime
 
 ### Vagrant
 
-* default Vagrantfile for global settings
+* default Vagrantfile for global settings. **Beware** save your previous Vagrantfile before calling sync -f
 
 # Installation
     git clone https://github.com/StefanScherer/dotfiles-windows && cd dotfiles-windows && sync.bat
