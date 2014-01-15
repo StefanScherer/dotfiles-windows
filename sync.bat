@@ -1,4 +1,4 @@
-@echo off
+rem @echo off
 cd /D %~dp0
 git pull
 
@@ -14,6 +14,11 @@ goto :EOF
 
 :doIt
 xcopy . "%USERPROFILE%" /EXCLUDE:excludes.txt /s /i /y
+rem copy .vagrant.d to HOME/.vagrant.d or VAGRANT_HOME if defined
+setlocal
+if "%VAGRANT_HOME%x"=="x" set VAGRANT_HOME=%UserProfile%\.vagrant.d
+xcopy .vagrant.d "%VAGRANT_HOME%" /s /i /y
+endlocal
 goto :EOF
 
 :addScriptsToUserPath

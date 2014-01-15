@@ -1,0 +1,8 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# ENV['VAGRANT_DEFAULT_PROVIDER'] = 'virtualbox'
+
+#    if Vagrant.has_plugin?("vagrant-cachier")
+#      config.cache.auto_detect = true
+#    end
