@@ -12,6 +12,7 @@ Inspired by <https://github.com/paulirish/dotfiles> for MacOS.
 
 * **addtime**: show relative time stamp in stdout of another tool.
   Usage: anothertool | addtime
+* **viewpath**: show PATH environemnt in gvim pretty printed
 * **z**: change to one of your favorite project folder
 
 ### Vagrant

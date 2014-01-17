@@ -1,0 +1,1 @@
+path | gvim - -c :s/PATH=// -c :s/;/\r/g
