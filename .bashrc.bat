@@ -1,4 +1,4 @@
-rem @echo off
+@echo off
 :: Command shell auto-run
 ::
 :: install this in your %USERPROFILE% and make this an autorun command
