@@ -10,13 +10,6 @@ call "%ProgramFiles%\clink\0.3.1\clink.bat" inject --profile "%LOCALAPPDATA%\cli
 ) else (
 call "%ProgramFiles(x86)%\clink\0.3.1\clink.bat" inject --profile "%LOCALAPPDATA%\clink"
 )
+call %~dp0\.aliases.bat
 
-
-
-:: Aliases
-doskey n=notepad $*
-doskey e=explorer .
-doskey ..=cd ..
-doskey ...=cd ..\..
-doskey history=type "%LOCALAPPDATA%\clink\.history" $*
 
