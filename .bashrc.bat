@@ -12,6 +12,6 @@ call "%ProgramFiles%\clink\0.3.1\clink.bat" inject --profile "%LOCALAPPDATA%\cli
 ) else (
 call "%ProgramFiles(x86)%\clink\0.3.1\clink.bat" inject --profile "%LOCALAPPDATA%\clink"
 )
-call %~dp0\.aliases.bat
+doskey /MACROFILE=%~dp0\.aliases
 
 
