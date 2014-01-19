@@ -19,6 +19,7 @@ setlocal
 if "%VAGRANT_HOME%x"=="x" set VAGRANT_HOME=%UserProfile%\.vagrant.d
 xcopy .vagrant.d "%VAGRANT_HOME%" /s /i /y
 endlocal
+reg add "HKCU\Software\Microsoft\Command Processor" /v AutoRun /d """%UserProfile%\.bashrc.bat""" /f
 goto :EOF
 
 :addScriptsToUserPath
