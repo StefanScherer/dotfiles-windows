@@ -22,6 +22,10 @@ Get even more features with clink! See below.
 * **e**: open explorer in current dir 
 * **..**: one dir up
 * **...**: two dirs up
+* **....**: three dirs up
+* **.....**: four dirs up
+* **~**: go into users home directory
+* **hosts**: edit your hosts file, if sudo is missing, call `cinst sudo`
 
 ### Vagrant
 
