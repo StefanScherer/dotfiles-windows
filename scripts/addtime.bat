@@ -31,5 +31,7 @@ while(<>)
   printf "%07.3f %s",$elapsed,$_;
 }
 
+my $total = tv_interval ( $t0 );
+printf "%07.3f\n",$total;
 __END__
 :endofperl
