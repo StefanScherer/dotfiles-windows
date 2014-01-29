@@ -42,6 +42,10 @@ To install clink with the chocolatey package, just type
 
 and then run the sync -f command again. Close current shell and open a new one. Then clink will do its magic.
 
+# Installation from barebone Windows
+Open up a command prompt and enter the following command to install basic tools.
+
+    @powershell -NoProfile -ExecutionPolicy unrestricted -Command "((new-object net.webclient).DownloadFile('https://raw.github.com/StefanScherer/dotfiles-windows/install/install.bat', '%Temp%\install.bat'))" && %Temp%\install.bat
 
 # Licensing
 Copyright (c) 2014 Stefan Scherer
