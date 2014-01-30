@@ -28,6 +28,7 @@ Get even more features with clink! See below.
 * **.....**: four dirs up
 * **~**: go into users home directory
 * **hosts**: edit your hosts file, if sudo is missing, call `cinst sudo`
+* **logvi logfile**: view a log file with relative times in gvim
 
 ### Vagrant
 

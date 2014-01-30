@@ -29,14 +29,19 @@ close LOG;
 
 
 my $starttime;
+my $prevtime;
 sub timeref
 {
   my ($timestr) = @_;
   my $time = str2time($timestr);
   $starttime = $time unless defined $starttime;
+  $prevtime = $time unless defined $prevtime;
   my $timeref = $time - $starttime;
+  my $timedelta = $time - $prevtime;
+  $prevtime = $time;
 
-  return sprintf "%8.3f", $timeref;
+  my $format = "%" . length($timestr) . ".3f";
+  return sprintf "%8.3f %8.3f", $timeref, $timedelta;
 }
 
 __END__

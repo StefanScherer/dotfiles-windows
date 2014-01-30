@@ -10,3 +10,4 @@ g=git $*
 v=gvim $*
 n=notepad $*
 e=explorer .
+logvi=timeref $* | gvim -c ":set nowrap" -
