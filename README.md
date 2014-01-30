@@ -13,6 +13,8 @@ Get even more features with clink! See below.
 
 * **addtime**: show relative time stamp in stdout of another tool.
   Usage: anothertool | addtime
+* **timeref**: show relative time diffs in logfile.
+  Usage: timeref logfile | gvim -
 * **viewpath**: show PATH environemnt in gvim pretty printed
 * **z**: change to one of your favorite project folder
 
