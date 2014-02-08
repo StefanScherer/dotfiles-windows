@@ -2,6 +2,7 @@
 
 Add some tweaks into current Windows user's home directory.
 Inspired by <https://github.com/paulirish/dotfiles> for MacOS.
+For Unix I prefer my <https://github.com/StefanScherer/dotfiles>.
 
 Get even more features with clink! See below.
 ## Features
