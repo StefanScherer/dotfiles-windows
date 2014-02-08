@@ -26,6 +26,6 @@ goto :EOF
 
 :addScriptsToUserPath
 for /F "tokens=2* delims= " %%f IN ('reg query "HKCU\Environment" /v Path ^| findstr /i path') do set OLD_USER_PATH=%%g
-reg add HKCU\Environment /v Path /d "%OLD_USER_PATH%;%UserProfile%\scripts" /f
-set PATH=%PATH%;%UserProfile%\scripts
+reg add HKCU\Environment /v Path /d "%OLD_USER_PATH%;%UserProfile%\bin" /f
+set PATH=%PATH%;%UserProfile%\bin
 exit /b
