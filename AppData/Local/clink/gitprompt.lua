@@ -23,7 +23,7 @@ function git_prompt_filter()
         if m then
             dirty = "+"
         end
-        m = line:match("modified:")
+        m = line:match("(modified:|new file:|deleted:)")
         if m then
             dirty = "*"
             break
