@@ -1,10 +1,5 @@
 " Windows _vimrc file
 
-" When started as "evim", evim.vim will already have done these settings.
-if v:progname =~? "evim"
-  finish
-endif
-
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
@@ -14,6 +9,11 @@ set expandtab
 set shiftwidth=4
 set tabstop=4
 set mousemodel=popup
+
+" Local dirs
+set backupdir=~/.vim/backups
+set directory=~/.vim/swaps
+set undodir=~/.vim/undo
 
 " Xterm-like selection
 set guioptions=am
@@ -115,7 +115,6 @@ map <C-Tab> :tabn<CR>
 map <C-S-Tab> :tabp<CR>
 
 set guifont=Consolas:h12
-" colors morning
 
 set background=light
 silent! colorscheme solarized
