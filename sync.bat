@@ -16,7 +16,7 @@ goto :EOF
 if not exist "%USERPROFILE%\.vim\bundle\vundle" (
   git clone https://github.com/gmarik/vundle.git "%USERPROFILE%/.vim/bundle/vundle"
 )
-xcopy . "%USERPROFILE%" /EXCLUDE:excludes.txt /s /i /y
+xcopy . "%USERPROFILE%" /EXCLUDE:excludes.txt /s /i /e /y
 
 setlocal
 :checkGvim
