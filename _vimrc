@@ -98,5 +98,21 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
 
-set guifont=Consolas:h12:cANSI
-colors morning
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+Bundle 'scrooloose/nerdtree'
+Bundle 'jistr/vim-nerdtree-tabs'
+Bundle 'altercation/vim-colors-solarized'
+
+autocmd vimenter * if !argc() | NERDTree | endif
+map <C-n> :NERDTreeToggle<CR>
+
+set guifont=Consolas:h12
+" colors morning
+
+set background=light
+silent! colorscheme solarized

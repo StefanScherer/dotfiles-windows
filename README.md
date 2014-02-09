@@ -35,6 +35,13 @@ Get even more features with clink! See below.
 
 * default Vagrantfile for global settings. **Beware** save your previous Vagrantfile before calling sync -f
 
+### VIM
+
+* Vundle
+* nerdtree
+* vim-nerdtree-tabs
+* vim-colors-solarized
+
 # Installation
     git clone https://github.com/StefanScherer/dotfiles-windows && cd dotfiles-windows && sync.bat
 

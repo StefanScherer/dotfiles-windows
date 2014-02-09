@@ -13,7 +13,29 @@ if "%answer%"=="Y" goto doIt
 goto :EOF
 
 :doIt
+if not exist "%USERPROFILE%\.vim\bundle\vundle" (
+  git clone https://github.com/gmarik/vundle.git "%USERPROFILE%/.vim/bundle/vundle"
+)
 xcopy . "%USERPROFILE%" /EXCLUDE:excludes.txt /s /i /y
+
+setlocal
+:checkGvim
+where /q gvim
+if ERRORLEVEL 1 goto :checkVim
+set VI=gvim
+goto :bundleInstall
+:checkVim
+where /q vim
+if ERRORLEVEL 1 goto :checkVi
+set VI=vim
+goto :bundleInstall
+:checkVi
+set VI=vi
+:bundleInstall
+%VI% +BundleInstall +qall
+:doneBundle
+endlocal
+
 rem copy .vagrant.d to HOME/.vagrant.d or VAGRANT_HOME if defined
 setlocal
 if "%VAGRANT_HOME%x"=="x" set VAGRANT_HOME=%UserProfile%\.vagrant.d
