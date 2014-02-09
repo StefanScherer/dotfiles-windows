@@ -6,5 +6,5 @@ local cvs_argument_tree = {
     "tag", "update"
 }
     
-clink.arg.register_tree("cvs", cvs_argument_tree)
+clink.arg.register_parser("cvs", cvs_argument_tree)
 
