@@ -39,9 +39,10 @@ Get even more features with [clink]<https://code.google.com/p/clink/>! See below
 ### VIM
 
 * Vundle
-* nerdtree
+* nerdtree - use **Ctrl-N** to toggle directory browser
 * vim-nerdtree-tabs
 * vim-colors-solarized
+* vim-fontzoom - use **+** and **-** to change font size
 
 # Installation
     git clone https://github.com/StefanScherer/dotfiles-windows && cd dotfiles-windows && sync.bat
