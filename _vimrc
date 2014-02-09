@@ -107,9 +107,12 @@ Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'thinca/vim-fontzoom'
 
 autocmd vimenter * if !argc() | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
+map <C-Tab> :tabn<CR>
+map <C-S-Tab> :tabp<CR>
 
 set guifont=Consolas:h12
 " colors morning
