@@ -3,6 +3,7 @@
 ....=cd ..\..\..
 .....=cd ..\..\..\..
 ~=cd /D %USERPROFILE%
+alias=doskey /macros
 history=type "%LOCALAPPDATA%\clink\.history" $*
 please=sudo $*
 hosts=sudo notepad %SystemRoot%\system32\drivers\etc\hosts
@@ -10,4 +11,4 @@ g=git $*
 v=gvim $*
 n=notepad $*
 e=explorer .
-logvi=timeref $* | gvim -c ":set nowrap" -
+logvi=timeref $* | vim -c ":set nowrap" -
