@@ -19,6 +19,10 @@ function git_prompt_filter()
         if m then
             branch = m
         end
+        m = line:match("^# Your branch is ahead of (.+)$")
+        if m then
+            dirty = "+"
+        end
         m = line:match("modified:")
         if m then
             dirty = "*"
