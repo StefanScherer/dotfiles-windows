@@ -109,6 +109,7 @@ Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'thinca/vim-fontzoom'
 
+silent! let g:nerdtree_tabs_open_on_gui_startup = 0
 autocmd vimenter * if !argc() | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
 map <C-Tab> :tabn<CR>
