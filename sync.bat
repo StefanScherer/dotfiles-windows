@@ -36,6 +36,16 @@ set VI=vi
 :doneBundle
 endlocal
 
+rem strawberry perl
+where /q perl
+if ERRORLEVEL 1 goto :noperl
+where /q perltidy
+if ERRORLEVEL 1 goto :installPerlTidy
+goto :noperl
+:installPerlTidy
+call cpan -i Perl::Tidy
+:noperl
+
 rem copy .vagrant.d to HOME/.vagrant.d or VAGRANT_HOME if defined
 setlocal
 if "%VAGRANT_HOME%x"=="x" set VAGRANT_HOME=%UserProfile%\.vagrant.d
