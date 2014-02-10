@@ -12,4 +12,5 @@ if exist "%USERPROFILE%\bin\clink\" (
 )
 doskey /MACROFILE=%~dp0\.aliases
 
+set GIT_EDITOR=gvim
 
