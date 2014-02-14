@@ -12,3 +12,4 @@ v=gvim $*
 n=notepad $*
 e=explorer .
 logvi=timeref $* | vim -c ":set nowrap" -
+open=cmd /C start $*
