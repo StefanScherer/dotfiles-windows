@@ -188,10 +188,6 @@ set relativenumber " Use relative line numbers. Current line is still in status 
 au BufReadPost,BufNewFile * set relativenumber
 
 
-" Emulate bundles, allow plugins to live independantly. Easier to manage.
-" call pathogen#runtime_append_all_bundles()
-filetype plugin indent on
-
 " JSON
 au BufRead,BufNewFile *.json set ft=json syntax=javascript
 
@@ -321,7 +317,13 @@ Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'jiangmiao/auto-pairs'
 Bundle 'thinca/vim-fontzoom'
+Bundle 'PProvost/vim-ps1'
+
+" Emulate bundles, allow plugins to live independantly. Easier to manage.
+" call pathogen#runtime_append_all_bundles()
+filetype plugin indent on
 
 let g:nerdtree_tabs_open_on_gui_startup = 0
 " autocmd vimenter * if !argc() | NERDTree | endif
