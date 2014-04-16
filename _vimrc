@@ -322,6 +322,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'thinca/vim-fontzoom'
+Bundle 'PProvost/vim-ps1'
 
 let g:nerdtree_tabs_open_on_gui_startup = 0
 " autocmd vimenter * if !argc() | NERDTree | endif
