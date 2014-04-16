@@ -36,7 +36,10 @@ Using Get even more features with [clink](https://code.google.com/p/clink/)! A g
 ### Sublime Text 3
 
 * My user preferences for Sublime Text 3 are stored in this repo. Take care. Use **subl** to open editor.
-* To install it, I use `cinst SublimeText3.app`
+* To install it, I use `cinst SublimeText3`
+* Install Package Control, see [Package Control Installation](https://sublime.wbond.net/installation)
+
+* **alt+m** - open Markdown HTML preview in browser
 
 ### Vagrant
 
