@@ -32,6 +32,11 @@ Using Get even more features with [clink](https://code.google.com/p/clink/)! A g
 * **hosts**: edit your hosts file, if sudo is missing, call `cinst sudo`
 * **logvi logfile**: view a log file with relative times in gvim
 
+### Sublime Text 3
+
+* My user preferences for Sublime Text 3 are stored in this repo. Take care.
+* A helper script **subl.bat** is added to call the editor from command line.
+
 ### Vagrant
 
 * default Vagrantfile for global settings. **Beware** save your previous Vagrantfile before calling sync -f
