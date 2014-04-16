@@ -13,3 +13,4 @@ n=notepad $*
 e=explorer .
 logvi=timeref $* | vim -c ":set nowrap" -
 open=cmd /C start $*
+subl="%ProgramFiles%\Sublime Text 3\sublime_text.exe" $*

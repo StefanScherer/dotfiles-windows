@@ -31,11 +31,11 @@ Using Get even more features with [clink](https://code.google.com/p/clink/)! A g
 * **~**: go into users home directory
 * **hosts**: edit your hosts file, if sudo is missing, call `cinst sudo`
 * **logvi logfile**: view a log file with relative times in gvim
+* **subl**: open Sublime Text 3
 
 ### Sublime Text 3
 
-* My user preferences for Sublime Text 3 are stored in this repo. Take care.
-* A helper script **subl.bat** is added to call the editor from command line.
+* My user preferences for Sublime Text 3 are stored in this repo. Take care. Use **subl** to open editor.
 
 ### Vagrant
 
