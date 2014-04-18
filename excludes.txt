@@ -2,6 +2,7 @@
 .DS_Store
 .vagrant.d
 sync.bat
+fetch-sublime-prefs.bat
 excludes.txt
 README.md
 LICENSE
