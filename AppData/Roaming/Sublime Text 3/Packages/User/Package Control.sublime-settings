@@ -1,6 +1,7 @@
 {
 	"installed_packages":
 	[
+		"ApplySyntax",
 		"GoSublime",
 		"Markdown Preview",
 		"Solarized Color Scheme",
