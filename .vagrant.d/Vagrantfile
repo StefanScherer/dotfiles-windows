@@ -6,8 +6,41 @@ Vagrant.configure("2") do |config|
     config.vbguest.auto_update = false
   end
 
+# polipo-box
+  if Vagrant.has_plugin?("vagrant-proxyconf")
+    config.proxy.http     = "http://192.168.33.200:8123/"
+    config.proxy.no_proxy = "localhost,127.0.0.1"
+  end
+
   if Vagrant.has_plugin?("vagrant-cachier")
     config.cache.auto_detect = true
+  end
+
+  if Vagrant.has_plugin?("vagrant-vcloud")
+    # vCloud Director provider settings
+    config.vm.provider :vcloud do |vcloud|
+      vcloud.hostname = "https://roecloud001"
+      vcloud.username = ENV['VAGRANT_VCLOUD_USERNAME'] || "vagrant"
+      vcloud.password = ENV['VAGRANT_VCLOUD_PASSWORD'] || "vagrant"
+
+      vcloud.org_name = "SS"
+      vcloud.vdc_name = "SS-VDC"
+
+      vcloud.catalog_name = "Vagrant"
+      vcloud.ip_subnet = "172.16.32.125/255.255.255.240"
+#      vcloud.ip_dns = ["10.100.20.2", "8.8.8.8"]
+
+      vcloud.vdc_network_name = "SS-INTERNAL"
+
+      vcloud.vdc_edge_gateway = "SS-EDGE"
+      vcloud.vdc_edge_gateway_ip = "10.100.50.4"
+    end
+  end
+
+  if Vagrant.has_plugin?("vagrant-proxyconf")
+    config.vm.provider :vcloud do |cloud, override|
+      override.proxy.enabled = false
+    end
   end
 end
 
