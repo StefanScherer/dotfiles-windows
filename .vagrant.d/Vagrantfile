@@ -27,8 +27,8 @@ Vagrant.configure("2") do |config|
       vcloud.vdc_name = "SS-VDC"
 
       vcloud.catalog_name = "Vagrant"
-      vcloud.ip_subnet = "172.16.32.125/255.255.255.240"
-#      vcloud.ip_dns = ["10.100.20.2", "8.8.8.8"]
+      vcloud.ip_subnet = "172.16.32.1/255.255.255.0"
+      vcloud.ip_dns = ["10.100.20.2", "8.8.8.8"]
 
       vcloud.vdc_network_name = "SS-INTERNAL"
 
@@ -40,6 +40,8 @@ Vagrant.configure("2") do |config|
   if Vagrant.has_plugin?("vagrant-proxyconf")
     config.vm.provider :vcloud do |cloud, override|
       override.proxy.enabled = false
+      # override.proxy.http     = "http://roecloudsrv001.sealsystems.local:8123/"
+      # override.proxy.no_proxy = "localhost,127.0.0.1"
     end
   end
 end
