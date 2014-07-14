@@ -364,6 +364,6 @@ function! PerlCheck()
   endif
 endfunction
 
-:autocmd BufWritePre * if &filetype == "perl" | :call Preserve(":%!perltidy -q -bli -ci=4 -l=160 -pt=2 -bt=2 -sbt=2")
-:autocmd BufWritePost * if &filetype == "perl" | :call PerlCheck()
+" :autocmd BufWritePre * if &filetype == "perl" | :call Preserve(":%!perltidy -q -bli -ci=4 -l=160 -pt=2 -bt=2 -sbt=2")
+" :autocmd BufWritePost * if &filetype == "perl" | :call PerlCheck()
 
