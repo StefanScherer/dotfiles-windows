@@ -18,6 +18,7 @@ Using Get even more features with [clink](https://code.google.com/p/clink/)! A g
 * **timeref**: show relative time diffs in logfile.
   Usage: timeref logfile | gvim -
 * **viewpath**: show PATH environemnt in gvim pretty printed
+* **vagrant-vmware-shell**: open elevated cmd shell for Vagrant with VMware Workstation
 * **z**: change to one of your favorite project folder
 
 ### Aliases
