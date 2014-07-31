@@ -3,9 +3,23 @@ setlocal enabledelayedexpansion
 
 if exist %TEMP%\zbat.txt del /F /Q %TEMP%\zbat.txt
 
-if exist b:\github call :zdir b:\github %1
+if exist %~dp0\..\github call :zdir %~dp0\..\github %1
 if exist %TEMP%\zbat.txt goto found
 
+if exist %~dp0\..\github\vagrant-sandbox call :zdir %~dp0\..\github\vagrant-sandbox %1
+if exist %TEMP%\zbat.txt goto found
+
+if exist %USERPROFILE%\github call :zdir %USERPROFILE%\github %1
+if exist %TEMP%\zbat.txt goto found
+
+if exist %USERPROFILE%\github\vagrant-sandbox call :zdir %USERPROFILE%\github\vagrant-sandbox %1
+if exist %TEMP%\zbat.txt goto found
+
+if exist %USERPROFILE%\github\plossys call :zdir %USERPROFILE%\github\plossys %1
+if exist %TEMP%\zbat.txt goto found
+
+if exist b:\github call :zdir b:\github %1
+if exist %TEMP%\zbat.txt goto found
 
 if exist b:\github\vagrant-sandbox call :zdir b:\github\vagrant-sandbox %1
 if exist %TEMP%\zbat.txt goto found
