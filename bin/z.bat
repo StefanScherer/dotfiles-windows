@@ -9,6 +9,9 @@ if exist %TEMP%\zbat.txt goto found
 if exist %~dp0\..\github\vagrant-sandbox call :zdir %~dp0\..\github\vagrant-sandbox %1
 if exist %TEMP%\zbat.txt goto found
 
+if exist %~dp0\..\github\plossys call :zdir %~dp0\..\github\plossys %1
+if exist %TEMP%\zbat.txt goto found
+
 if exist %USERPROFILE%\github call :zdir %USERPROFILE%\github %1
 if exist %TEMP%\zbat.txt goto found
 
@@ -16,15 +19,6 @@ if exist %USERPROFILE%\github\vagrant-sandbox call :zdir %USERPROFILE%\github\va
 if exist %TEMP%\zbat.txt goto found
 
 if exist %USERPROFILE%\github\plossys call :zdir %USERPROFILE%\github\plossys %1
-if exist %TEMP%\zbat.txt goto found
-
-if exist b:\github call :zdir b:\github %1
-if exist %TEMP%\zbat.txt goto found
-
-if exist b:\github\vagrant-sandbox call :zdir b:\github\vagrant-sandbox %1
-if exist %TEMP%\zbat.txt goto found
-
-if exist b:\github\vagrant-sandbox call :zdir b:\github\plossys %1
 if exist %TEMP%\zbat.txt goto found
 
 if exist g:\github call :zdir g:\github %1
