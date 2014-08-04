@@ -15,3 +15,6 @@ logvi=timeref $* | vim -c ":set nowrap" -
 open=cmd /C start $*
 subl="%ProgramFiles%\Sublime Text 3\sublime_text.exe" $*
 vagrant-vmware-shell=sudo cmd /K %USERPROFILE%\bin\vagrant-vmware-shell.bat "%cd%"
+elevate-shell=sudo cmd /K %USERPROFILE%\bin\vagrant-vmware-shell.bat "%cd%"
+sudo-shell=sudo cmd /K %USERPROFILE%\bin\vagrant-vmware-shell.bat "%cd%"
+sudo-cmd=sudo cmd /K %USERPROFILE%\bin\vagrant-vmware-shell.bat "%cd%"
