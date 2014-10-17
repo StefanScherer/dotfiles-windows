@@ -4,7 +4,7 @@ git pull
 
 where /q z.bat
 if ERRORLEVEL 1 call :addScriptsToUserPath
- 
+
 if "%1x"=="--forcex" goto doIt
 if "%1x"=="-fx" goto doIt
 set /p answer=This may overwrite existing files in your home directory. Are you sure? (y/n)
@@ -45,6 +45,13 @@ goto :noperl
 :installPerlTidy
 call cpan -i Perl::Tidy
 :noperl
+
+where /q apm
+if ERRORLEVEL 1 goto :noatom
+if not exist %USERPROFILE%\.atom\packages\parcel (
+  apm install parcel
+)
+:noatom
 
 rem copy .vagrant.d to HOME/.vagrant.d or VAGRANT_HOME if defined
 setlocal

@@ -23,8 +23,8 @@ Using Get even more features with [clink](https://code.google.com/p/clink/)! A g
 
 ### Aliases
 
-* **n**: notepad 
-* **e**: open explorer in current dir 
+* **n**: notepad
+* **e**: open explorer in current dir
 * **..**: one dir up
 * **...**: two dirs up
 * **....**: three dirs up
@@ -33,6 +33,23 @@ Using Get even more features with [clink](https://code.google.com/p/clink/)! A g
 * **hosts**: edit your hosts file, if sudo is missing, call `cinst sudo`
 * **logvi logfile**: view a log file with relative times in gvim
 * **subl**: open Sublime Text 3
+
+### Atom
+
+My preferences for Atom.io are also stored here.
+
+* **autocomplete-plus** - `keymap.cson` use ENTER instead of TAB
+* **editorconfig**
+* **language-batch**
+* **language-powershell**
+
+To setup Atom from scratch, first install it, then
+```cmd
+cinst atom
+apm install parcel
+```
+Then open Atom and use menu `Packages / Parcel / Sync` to install all other plugins.
+**Notice** Sometimes you have to Sync more than once to install all packages.
 
 ### Sublime Text 3
 
@@ -62,7 +79,7 @@ To update later on, just run the sync again.
 Close current shell and open a new one. Then clink will do its magic.
 
 # Git-less installation
-Open up a command prompt and enter the following command to install basic tools: DotNet4, Chocolatey and 
+Open up a command prompt and enter the following command to install basic tools: DotNet4, Chocolatey and
 useful command line tools.
 
     @powershell -NoProfile -ExecutionPolicy unrestricted -Command "((new-object net.webclient).DownloadFile('https://raw.github.com/StefanScherer/dotfiles-windows/install/install.bat', '%Temp%\install.bat'))" && %Temp%\install.bat
