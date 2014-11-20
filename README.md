@@ -4,7 +4,7 @@ Add some tweaks into current Windows user's home directory.
 Inspired by <https://github.com/paulirish/dotfiles> for MacOS.
 For Unix I prefer my <https://github.com/StefanScherer/dotfiles>.
 
-Using Get even more features with [clink](https://code.google.com/p/clink/)! A git prompt will be added.
+Get even more features with [cmder](http://bliker.github.io/cmder/)! A git prompt will be added.
 
 ## Features
 ### Syntax highlighting
@@ -72,11 +72,17 @@ Then open Atom and use menu `Packages / Parcel / Sync` to install all other plug
 * vim-fontzoom - use **+** and **-** to change font size
 
 # Installation
-    git clone https://github.com/StefanScherer/dotfiles-windows && cd dotfiles-windows && sync.bat
+```
+git clone https://github.com/StefanScherer/dotfiles-windows && cd dotfiles-windows && sync.bat
+```
 
 To update later on, just run the sync again.
 
-Close current shell and open a new one. Then clink will do its magic.
+```
+cinst cmder
+```
+
+Close current shell and open a new one. Then cmder will do its magic.
 
 # Git-less installation
 Open up a command prompt and enter the following command to install basic tools: DotNet4, Chocolatey and

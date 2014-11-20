@@ -3,9 +3,11 @@
 .vagrant.d
 sync.bat
 fetch-sublime-prefs.bat
+fetch-cmder-prefs.bat
 excludes.txt
 README.md
 LICENSE
 ~\
 .swp
 .gitkeep
+cmder

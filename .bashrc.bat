@@ -7,10 +7,14 @@ if "%SKIP_BASHRC_RUN%x"=="1x" goto :EOF
 ::   reg add "HKCU\Software\Microsoft\Command Processor" /v AutoRun /d """%UserProfile%\.bashrc.bat""" /f
 ::
 set SKIP_BASHRC_RUN=1
+if exist "C:\ProgramData\Chocolatey\lib\cmder.portable.1.1.1\tools\cmder\Cmder.bat" (
+  call "C:\ProgramData\Chocolatey\lib\cmder.portable.1.1.1\tools\cmder\Cmder.bat"
+  exit
+)
+
 if exist "%USERPROFILE%\bin\clink\" (
   call "%USERPROFILE%\bin\clink\clink.bat" inject --profile "%LOCALAPPDATA%\clink"
 )
 doskey /MACROFILE=%~dp0\.aliases
 
 set GIT_EDITOR=gvim
-

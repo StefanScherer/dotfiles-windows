@@ -1,0 +1,292 @@
+alias = hello
+alias meh = hello
+alias meh=hello
+alias meh
+alias
+aloas
+alias
+
+alias /s
+alias /?
+alias d
+alias dd
+alias ddd
+alias dddd
+exit
+alias
+exit
+ls
+cd Desktop\Cmder\repo\
+gs
+git log
+git status
+cat config\aliases 
+git reset HEAD --hard
+s
+ls
+gs
+git status
+ls
+git pull
+ls
+gs
+ls
+cat bin\alias.bat 
+cat config\aliases 
+mv config\aliases config\aliases.bak
+alias
+git diff config\aliases config\aliases.bak 
+
+git reset HEAD --hard
+gs
+ls
+cp config\aliases
+cp config\aliases config\aliases.bak
+ls config\
+cp config\aliases config\aliases.bak
+alias
+diff config\aliases config\aliases.bak
+alias holy=smokes
+diff config\aliases config\aliases.bak
+cat config\aliases
+alias holy=smokes
+cat config\aliases
+diff 
+diff  --help
+git reset HEAD --hard
+cp config\aliases config\aliases.bak
+alias
+alias =
+alias 1=
+diff -q config\aliases config\aliases.bak
+alias hej=ne
+diff -q config\aliases config\aliases.bak
+pwd
+pwd "$@"
+vim
+vi
+vim
+cdd
+cd
+git reset HEAD --hard
+alias pwd=cd
+pwd
+cd ..
+wd
+pwd
+sl
+exit
+cd Desktop\Cmder\repo\
+gs
+git status
+cd vendor\msysgit\
+cls
+ls
+cd lib
+ls
+cd ..
+cd libexec\
+ls
+cd git-core\
+ls
+ls --line
+ls -l
+ls -l -m
+ls --help
+diff git-log.exe git-init.exe 
+git-log
+cd ..
+ls
+cd ..
+cd libexec\
+ls
+cd git-core\
+ls
+git-merge
+echo $PATH
+echo %PATH%
+ls
+md5
+sha
+cd Desktop\Cmder\
+cd repo\
+
+exit
+ps
+notepad.exe 
+cd Desktop\Cmder\repo\
+ls
+vendor\conemu-maximus5\ConEmu.exe --help
+vendor\conemu-maximus5\ConEmu.exe /?
+vendor\conemu-maximus5\ConEmu.exe /Icon icons\cmder.ico 
+vendor\conemu-maximus5\ConEmu.exe /Icon \icons\cmder.ico 
+ls
+git checkout master
+git reset HEAD --hard
+git checkout master
+ls
+git log
+git pull
+ls
+git checkout -b Shoozza-patch-2 master
+cd Desktop\Cmder\repo\
+git status
+git reset HEAD --hard
+gs
+ls
+git checkout -b Shoozza-patch-2 master
+gs
+ls
+git status
+git clean -d
+git clean -f
+git pull
+git pull https://github.com/Shoozza/cmder.git patch-2
+ls
+cd Desktop\Cmder\repo\
+git status
+git clean -d
+ls
+dir
+ls
+git checkout -b Shoozza-powershell-init-script master
+git pull https://github.com/Shoozza/cmder.git powershell-init-script
+
+powershell
+ls
+exit
+powershell --help
+powershell /?
+exit
+ls
+powershell /?
+ssh pi@192.168.1.33
+ssh pi@192.168.1.44
+cd Desktop\Cmder\repo\vendor\msysgit\
+ls
+git reset HEAD --hard
+ls
+git status
+git checkout master
+ls
+dc libexec\git-core\
+cd libexec\git-core\
+ls
+ls -l
+ssh pi@192.168.1.44
+cd Desktop\Cmder\repo\
+ls
+git status
+git clean -f
+git pull
+git branch
+git branch -d  Shoozza-patch-2
+git branch -D Shoozza-patch-2
+git branch -D  Shoozza-powershell-init-script
+ls
+branch
+git pull origin master
+git push --dry
+git checkout -b schlamar-custom-dir master
+git pull https://github.com/schlamar/cmder.git custom-dir
+git status
+git checkout master
+git status
+git diff vendor\init.bat 
+cat vendor\init.bat 
+ls
+git status
+git statis
+git stats
+git status
+vim
+gs
+git status
+git add vendor\init.bat 
+git checkout master
+ls
+git status
+git merge schlamar-custom-dir
+diff Cmder.bat 
+git diff Cmder.bat 
+git diff vendor\init.bat 
+git status
+git commit -am "Allow to run cmd task from custom location."
+git status
+git push
+git diff-files --quiet --ignore-submodules
+echo git diff-files --quiet --ignore-submodules
+git diff-files --quiet --ignore-submodules
+%errorlevel%
+echo %errorlevel%
+git diff-files --quiet --ignore-submodules
+git diff-files --ignore-submodule
+git diff-files 
+git status
+exit
+git diff
+git diff 
+git commit -am "Changed shortcut for new console to LShift + alt + #, Closing #9 and #17"
+git push
+echo %HOME%
+git commit -am "Unecessary whitespace removed + pwd alias added"
+git push
+exit
+git status
+git commit -am "Added icon"
+git push
+git pull
+exit
+git status
+z bas
+ls
+z vs
+vagrant halt | addtime
+asdfdsafasdfadsfdsffdsb:\GitHub\vagrant-sandbox\win7-vs2012u3 (master)
+λ vagrant halt | addtime
+005.267 [multilang] VM not created. Moving on...
+005.999 [vs2012qt520] VM not created. Moving on...
+007.609 [vs2012] Attempting graceful shutdown of VM...
+038.433 [testwin7x64] VM not created. Moving on...
+0b:\GitHub\vagrant-sandbox\win7-vs2012u3 (master)
+dir
+ls
+set
+dir
+vi
+cat xx
+rm xx
+where rm
+where tar
+perldoc Date::Parse
+where perl
+git
+where git
+ls
+exit
+dir
+z mean
+dir
+ls
+ls -l
+vi Vagrantfile
+which vi
+where vi
+which cmder
+vi C:\Chocolatey\lib\cmder.portable.1.1.1\tools\cmder\Cmder.bat
+cd c:
+c:
+cd \Chocolatey\lib\cmder.portable.1.1.1\
+dir
+cd tools\
+dir
+cd cmder\
+dir
+du .
+cmd
+dir
+z dot
+z dotfiles-w
+sync -f
+z dotfiles-w
+sync -f
