@@ -1,4 +1,5 @@
 @echo off
+taskkill /F /IM ssh-agent.exe
 ssh-agent | grep -v echo | sed -e "s/^/@set /" | sed -e "s/;.*$//" - > %TEMP%\call.cmd
 call %TEMP%\call.cmd
 del %TEMP%\call.cmd
