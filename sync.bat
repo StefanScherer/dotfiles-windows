@@ -17,7 +17,7 @@ if not exist "%USERPROFILE%\.vim\bundle\vundle" (
   git clone https://github.com/gmarik/vundle.git "%USERPROFILE%/.vim/bundle/vundle"
 )
 xcopy . "%USERPROFILE%" /EXCLUDE:excludes.txt /s /i /e /y /c
-xcopy cmder\config "C:\ProgramData\Chocolatey\lib\cmder.portable.1.1.1\tools\cmder\config" /s /i /e /y /c
+xcopy cmder\config "C:\cmder\config" /s /i /e /y /c
 
 setlocal
 :checkGvim
