@@ -6,3 +6,7 @@ if exist "C:\cmder\Cmder.exe" (
   "C:\cmder\Cmder.exe"
   exit
 )
+if exist "C:\ProgramData\Chocolatey\lib\cmder.portable.1.1.1\tools\cmder\Cmder.bat" (
+  call "C:\ProgramData\Chocolatey\lib\cmder.portable.1.1.1\tools\cmder\Cmder.bat"
+  exit
+)
