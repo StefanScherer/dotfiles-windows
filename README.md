@@ -7,6 +7,15 @@ For Unix I prefer my <https://github.com/StefanScherer/dotfiles>.
 Get even more features with [cmder](http://bliker.github.io/cmder/)! A git prompt will be added.
 
 ## Features
+### Cmder
+
+The most visible boost is using Cmder as shell enhancement on Windows. See Installation for further steps.
+
+#### Key bindings
+
+* `CTRL + +` - increase font size
+* `CTRL + -` - decrease font size
+
 ### Syntax highlighting
 
 * gvim highlights inline shell scripts in Vagrantfiles
