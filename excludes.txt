@@ -11,3 +11,4 @@ LICENSE
 .swp
 .gitkeep
 cmder
+images

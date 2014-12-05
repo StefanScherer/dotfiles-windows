@@ -6,6 +6,8 @@ For Unix I prefer my <https://github.com/StefanScherer/dotfiles>.
 
 Get even more features with [cmder](http://bliker.github.io/cmder/)! A git prompt will be added.
 
+![cmder.png](images/cmder.png)
+
 ## Features
 ### Cmder
 
