@@ -20,3 +20,9 @@
 '.autocomplete-plus input.hidden-input':
   'tab': 'unset!'
   'enter': 'autocomplete-plus:confirm'
+
+# get rid of nasty key bindings so that alt-gr+q and alt-gr+ß workspace
+# see https://github.com/atom/atom-keymap/issues/35
+'.platform-win32 .editor':
+  'ctrl-alt-[': 'unset!'
+  'ctrl-alt-q': 'unset!'
