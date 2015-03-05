@@ -1,11 +1,16 @@
 {
+	"in_process_packages":
+	[
+	],
 	"installed_packages":
 	[
 		"ApplySyntax",
+		"AutoItScript",
 		"Cucumber",
 		"EditorConfig",
 		"GoSublime",
 		"Markdown Preview",
+		"Package Control",
 		"PowerShell",
 		"Solarized Color Scheme",
 		"Solarized Toggle"
