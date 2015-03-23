@@ -6,6 +6,9 @@
 ::   reg add "HKCU\Software\Microsoft\Command Processor" /v AutoRun /d """%UserProfile%\.bashrc.bat""" /f
 ::
 
-set GIT_EDITOR=gvim
-
-if "%HOME%x"=="x" call start-ssh-agent.bat
+if "%1x"=="x" (
+  if "%GIT_EDITOR%x"=="x" (
+    set GIT_EDITOR=gvim
+    if "%HOME%x"=="x" call start-ssh-agent.bat
+  )
+)
