@@ -8,5 +8,4 @@
 
 set GIT_EDITOR=gvim
 
-call start-ssh-agent.bat
-
+if "%HOME%x"=="x" call start-ssh-agent.bat
