@@ -1,4 +1,5 @@
 'packages': [
+  'atom-beautifier'
   'autocomplete-plus'
   'editorconfig'
   'feedback'
