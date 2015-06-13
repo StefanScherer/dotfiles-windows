@@ -54,8 +54,10 @@ call cpan -i Perl::Tidy
 
 where /q apm
 if ERRORLEVEL 1 goto :noatom
-if not exist %USERPROFILE%\.atom\packages\parcel (
-  apm install parcel
+if not exist %USERPROFILE%\.atom\packages\editorconfig (
+  apm install editorconfig
+  apm install language-powershell
+  apm install language-batch
 )
 :noatom
 

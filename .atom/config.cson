@@ -13,10 +13,6 @@
       ".svn"
       ".DS_Store"
     ]
-    themes: [
-      "atom-dark-ui"
-      "atom-dark-syntax"
-    ]
   editor:
-    fontSize: 20
+    fontSize: 23
     invisibles: {}
