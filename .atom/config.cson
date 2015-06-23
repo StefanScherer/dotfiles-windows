@@ -14,5 +14,6 @@
       ".DS_Store"
     ]
   editor:
-    fontSize: 23
+    fontSize: 26
     invisibles: {}
+    autoIndentOnPaste: false
