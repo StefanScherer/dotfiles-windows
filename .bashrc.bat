@@ -14,3 +14,6 @@ if "%cd%"=="%USERPROFILE%" (
     )
   )
 )
+
+:: for vagrant ssh
+set TERM=linux
