@@ -21,6 +21,8 @@ if not exist %USERPROFILE%\.atom\packages\editorconfig (
   apm install editorconfig
   apm install language-powershell
   apm install language-batch
+  apm install file-types
+  apm install language-docker
 )
 :noatom
 

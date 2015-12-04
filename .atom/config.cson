@@ -17,3 +17,5 @@
     fontSize: 19
     invisibles: {}
     autoIndentOnPaste: false
+  'file-types':
+    '^Dockerfile\\..*': 'source.dockerfile'
