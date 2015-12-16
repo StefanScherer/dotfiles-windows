@@ -19,3 +19,5 @@
     autoIndentOnPaste: false
   'file-types':
     '^Dockerfile\\..*': 'source.dockerfile'
+    '.*\\.wxs$': 'text.xml'
+ 
