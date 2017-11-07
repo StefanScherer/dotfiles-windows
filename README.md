@@ -6,28 +6,15 @@ For Unix I prefer my <https://github.com/StefanScherer/dotfiles>.
 
 ## Features
 
-### Syntax highlighting
-
-### Tools
-
-* **addtime**: show relative time stamp in stdout of another tool.
-  Usage: anothertool | addtime
-* **timeref**: show relative time diffs in logfile.
-  Usage: timeref logfile | gvim -
-* **viewpath**: show PATH environemnt in gvim pretty printed
-* **z**: change to one of your favorite project folder
-
 ### Aliases
 
-* **n**: notepad
-* **e**: open explorer in current dir
 * **..**: one dir up
 * **...**: two dirs up
 * **....**: three dirs up
 * **.....**: four dirs up
-* **~**: go into users home directory
+* **home**: go into users home directory
+* **z**: change to one of your favorite project folder
 * **hosts**: edit your hosts file, if sudo is missing, call `cinst sudo`
-* **logvi logfile**: view a log file with relative times in gvim
 * **subl**: open Sublime Text 3
 
 ### Atom
@@ -54,6 +41,16 @@ Then open Atom and use menu `Packages / Parcel / Sync` to install all other plug
 * Install Package Control, see [Package Control Installation](https://sublime.wbond.net/installation)
 
 * **alt+m** - open Markdown HTML preview in browser
+
+### Syntax highlighting
+
+### Tools
+
+* **addtime**: show relative time stamp in stdout of another tool.
+  Usage: anothertool | addtime
+* **timeref**: show relative time diffs in logfile.
+  Usage: timeref logfile | gvim -
+* **viewpath**: show PATH environemnt in gvim pretty printed
 
 # Installation
 ```
