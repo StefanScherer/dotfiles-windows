@@ -1,7 +1,4 @@
-﻿# install-module z
-# install-module PSReadLine
-
-import-module z
+﻿import-module z
 
 Set-PSReadlineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
@@ -12,8 +9,18 @@ function .... { cd .. ; cd .. ; cd .. }
 function ..... { cd .. ; cd .. ; cd .. ; cd .. }
 function home { cd $env:USERPROFILE }
 
-function subl { &"${Env:ProgramFiles}\Sublime Text 3\sublime_text.exe" $args }
+Import-Module posh-git
 
-# Load posh-git example profile
-. "$env:USERPROFILE\Documents\WindowsPowerShell\Modules\posh-git\profile.example.ps1"
+# Set up a simple prompt, adding the git prompt parts inside git repos
+function global:prompt {
+    $realLASTEXITCODE = $LASTEXITCODE
 
+    Write-Host($pwd.ProviderPath) -nonewline
+
+    Write-VcsStatus
+
+    $global:LASTEXITCODE = $realLASTEXITCODE
+    return "> "
+}
+
+Start-SshAgent -Quiet

@@ -1,6 +1,6 @@
 # dotfiles-windows
 
-Add some tweaks into current Windows user's home directory.
+Add some tweaks into my PowerShell.
 Inspired by <https://github.com/paulirish/dotfiles> for MacOS.
 For Unix I prefer my <https://github.com/StefanScherer/dotfiles>.
 
@@ -14,8 +14,6 @@ For Unix I prefer my <https://github.com/StefanScherer/dotfiles>.
 * **.....**: four dirs up
 * **home**: go into users home directory
 * **z**: change to one of your favorite project folder
-* **hosts**: edit your hosts file, if sudo is missing, call `cinst sudo`
-* **subl**: open Sublime Text 3
 
 ### Atom
 
@@ -34,36 +32,12 @@ apm install parcel
 Then open Atom and use menu `Packages / Parcel / Sync` to install all other plugins.
 **Notice** Sometimes you have to Sync more than once to install all packages.
 
-### Sublime Text 3
-
-* My user preferences for Sublime Text 3 are stored in this repo. Take care. Use **subl** to open editor.
-* To install it, I use `cinst SublimeText3`
-* Install Package Control, see [Package Control Installation](https://sublime.wbond.net/installation)
-
-* **alt+m** - open Markdown HTML preview in browser
-
-### Syntax highlighting
-
-### Tools
-
-* **addtime**: show relative time stamp in stdout of another tool.
-  Usage: anothertool | addtime
-* **timeref**: show relative time diffs in logfile.
-  Usage: timeref logfile | gvim -
-* **viewpath**: show PATH environemnt in gvim pretty printed
-
 # Installation
 ```
-git clone https://github.com/StefanScherer/dotfiles-windows && cd dotfiles-windows && sync.bat
+git clone https://github.com/StefanScherer/dotfiles-windows ; cd dotfiles-windows ; sync.ps1
 ```
 
 To update later on, just run the sync again.
-
-# Git-less installation
-Open up a command prompt and enter the following command to install basic tools: DotNet4, Chocolatey and
-useful command line tools.
-
-    @powershell -NoProfile -ExecutionPolicy unrestricted -Command "((new-object net.webclient).DownloadFile('https://raw.github.com/StefanScherer/dotfiles-windows/install/install.bat', '%Temp%\install.bat'))" && %Temp%\install.bat
 
 # Licensing
 Copyright (c) 2014 Stefan Scherer
