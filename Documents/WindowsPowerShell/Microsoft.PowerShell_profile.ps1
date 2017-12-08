@@ -17,12 +17,12 @@ Import-Module posh-git
 function global:prompt {
     $realLASTEXITCODE = $LASTEXITCODE
 
-    Write-Host($pwd.ProviderPath) -nonewline
+    Write-Host($pwd.ProviderPath) -nonewline -ForegroundColor Gray
 
     Write-VcsStatus
-
+    Write-Host
     $global:LASTEXITCODE = $realLASTEXITCODE
-    return "> "
+    return "$ "
 }
 
 Start-SshAgent -Quiet
