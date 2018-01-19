@@ -4,6 +4,13 @@ Add some tweaks into my PowerShell.
 Inspired by <https://github.com/paulirish/dotfiles> for MacOS.
 For Unix I prefer my <https://github.com/StefanScherer/dotfiles>.
 
+## Installation
+```
+git clone https://github.com/StefanScherer/dotfiles-windows ; cd dotfiles-windows ; .\sync.ps1
+```
+
+To update later on, just run the sync again.
+
 ## Features
 
 ### Aliases
@@ -31,13 +38,6 @@ apm install parcel
 ```
 Then open Atom and use menu `Packages / Parcel / Sync` to install all other plugins.
 **Notice** Sometimes you have to Sync more than once to install all packages.
-
-# Installation
-```
-git clone https://github.com/StefanScherer/dotfiles-windows ; cd dotfiles-windows ; sync.ps1
-```
-
-To update later on, just run the sync again.
 
 # Licensing
 Copyright (c) 2014 Stefan Scherer
