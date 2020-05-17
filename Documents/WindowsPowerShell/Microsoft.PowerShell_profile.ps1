@@ -25,4 +25,8 @@ function global:prompt {
     return "$ "
 }
 
+function t {
+    wsl.exe -d Ubuntu-20.04 ~/bin/t
+}
+
 Start-SshAgent -Quiet
