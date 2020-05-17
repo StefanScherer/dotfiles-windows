@@ -20,6 +20,7 @@ To update later on, just run the sync again.
 * **....**: three dirs up
 * **.....**: four dirs up
 * **home**: go into users home directory
+* **t**: toggle theme between dark mode and light mode. Depends on WSL 2 [~bin/t](https://github.com/StefanScherer/dotfiles/blob/master/bin/t) script
 * **z**: change to one of your favorite project folder
 
 # Licensing
