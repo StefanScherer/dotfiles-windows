@@ -22,23 +22,6 @@ To update later on, just run the sync again.
 * **home**: go into users home directory
 * **z**: change to one of your favorite project folder
 
-### Atom
-
-My preferences for Atom.io are also stored here.
-
-* **autocomplete-plus** - `keymap.cson` use ENTER instead of TAB
-* **editorconfig**
-* **language-batch**
-* **language-powershell**
-
-To setup Atom from scratch, first install it, then
-```cmd
-cinst atom
-apm install parcel
-```
-Then open Atom and use menu `Packages / Parcel / Sync` to install all other plugins.
-**Notice** Sometimes you have to Sync more than once to install all packages.
-
 # Licensing
 Copyright (c) 2014 Stefan Scherer
 
